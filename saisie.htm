@@ -1,0 +1,39 @@
+<html>
+<!-- en-tete technique-->
+<head>
+<title>Formulaire</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Exemple de formulaire">
+<meta name="keywords" lang="fr" content="html,formulaire,boutons">
+<meta name="Author" content="Grégoire Maréchal">
+<!-- appel de la feuille de style externe -->
+ <link href="style_formulaire.css" type="text/css" rel="stylesheet" media="all">
+</head>
+
+<!--corps-->
+<body> 
+<!-- Debut du formulaire -->
+<form name="formulaire1" action="traitement.php" method="post" enctype='application/x-www-form-urlencoded'>
+
+<!-- Zones de Texte -->
+
+      	<h4>Choix du billet</h4>
+<fieldset>  
+		<label>1e classe</label><input type="radio" name="classe" value="1">
+		<label>2e classe</label><input type="radio" name="classe" value="2">
+		<label>Periode bleue</label><input type="radio" name="periode" value="bleue">
+		<label>Periode blanche</label><input type="radio" name="periode" value="blanche">
+		<label>Periode rouge</label><input type="radio" name="periode" value="rouge">
+		<label>aller-retour</label><input type="radio" name="allerretour" value="ar">
+</fieldset>
+
+
+<!-- Bouton de validation ; la classe "envoi" sert pour la mise en page -->
+<div class="envoi">
+	<input type="submit" class="envoi" value="Envoyer" />
+</div>
+<!-- fin du formulaire -->
+</form>
+
+ </body>
+</html>
